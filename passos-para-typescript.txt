@@ -1,0 +1,21 @@
+-> Instalar o TypeScript
+$ npm i typescript -D
+
+-> Instalar o ts-node
+$ npm i ts-node -D
+
+-> Configurar o CodeRunner
+Crie um pasta chamada .vscode, e crie um arquivo dentro da pasta
+.vscode com o nome settings.json e coloque a configuração abaixo.
+
+{
+  "code-runner.executorMap": {
+    "typescript": "clear && npx ts-node --files --transpile-only"
+  }
+}
+
+-> criar arquivo de configuração do TypeScript
+$ npx tsc --init
+
+-> Declaration Types para libs
+$ npm i @types/<nome_da_lib>
